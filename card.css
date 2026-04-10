@@ -1,22 +1,15 @@
-/* ============================================
-   COMPOSANT : CARTES DE BIÈRES
-   Modifie ici l'apparence des cartes individuelles
-   et de la grille qui les contient
-   ============================================ */
 
-/* --- GRILLE DE CARTES (.cards) --- */
-/* Conteneur qui affiche toutes les cartes côte à côte */
 .cards {
-  display: flex;                 /* Active flexbox : les cartes se mettent en ligne */
-  flex-wrap: wrap;               /* Les cartes passent à la ligne si pas assez de place */
-  gap: 20px;                     /* Espace entre chaque carte (change pour plus/moins d'espace) */
-  justify-content: center;       /* Centre les cartes horizontalement */
-  max-width: 1100px;             /* Largeur maximale de la grille */
-  margin: 0 auto;                /* Centre la grille sur la page */
-  padding: 40px 20px;           /* Espace autour de la grille */
+  display: flex;                 
+  flex-wrap: wrap;               
+  gap: 20px;                     
+  justify-content: center;       
+  max-width: 1100px;             
+  margin: 0 auto;                
+  padding: 40px 20px;           
 }
 
-/* --- CARTE INDIVIDUELLE (.card) --- */
+
 .card {
   flex-basis: 300px;             /* Largeur de base de chaque carte (change pour des cartes plus larges/étroites) */
   flex-grow: 1;                  /* La carte peut grandir pour remplir l'espace disponible */
