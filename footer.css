@@ -1,31 +1,25 @@
-/* ============================================
-   COMPOSANT : PIED DE PAGE (FOOTER)
-   Modifie ici la section en bas de la page
-   ============================================ */
-
 .footer {
-  background-color: #1A0A00;     /* Même couleur que la navbar pour la cohérence */
-  color: #aaa;                   /* Texte gris clair */
+  background-color: #1A0A00;     
+  color: #aaa;                   
   text-align: center;
-  padding: 30px 20px;            /* Espace intérieur */
+  padding: 30px 20px;           
   font-size: 14px;
-  margin-top: 60px;              /* Espace au-dessus du footer */
-}
+  margin-top: 60px;              
 
 .footer p {
   margin: 5px 0;
 }
 
-/* Lien dans le footer */
+
 .footer a {
-  color: #D4820A;                /* Couleur ambrée */
+  color: #D4820A;                
   text-decoration: none;
 }
 
-/* Message de consommation responsable */
+
 .footer .mention {
   font-size: 12px;
-  color: #666;                   /* Plus discret */
+  color: #666;                   
   margin-top: 15px;
   font-style: italic;
 }
