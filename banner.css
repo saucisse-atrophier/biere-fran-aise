@@ -1,0 +1,41 @@
+/* ============================================
+   COMPOSANT : BANNER (EN-TÊTE PRINCIPAL)
+   Modifie ici tout ce qui concerne la grande image en haut
+   ============================================ */
+
+.banner {
+  /* Image de fond + dégradé sombre par-dessus pour rendre le texte lisible */
+  background-image:
+    linear-gradient(-225deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.2) 60%), /* Dégradé noir transparent */
+    url('https://images.unsplash.com/photo-1608270586620-248524c67de9?w=1600&q=80'); /* Image de fond (change l'URL pour changer l'image) */
+  background-size: cover;        /* L'image couvre tout le banner */
+  background-position: center;   /* L'image est centrée */
+
+  padding: 150px 0;              /* Espace en haut et en bas (change pour agrandir/réduire le banner) */
+  color: white;                  /* Couleur du texte à l'intérieur du banner */
+  text-align: center;            /* Texte centré */
+}
+
+/* Titre principal dans le banner */
+.banner h1 {
+  color: white;
+  font-size: 60px;               /* Taille du grand titre (change pour agrandir/réduire) */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5); /* Ombre sous le texte pour meilleure lisibilité */
+}
+
+/* Sous-titre dans le banner */
+.banner h2 {
+  color: white;
+  font-size: 24px;               /* Taille du sous-titre */
+  font-weight: lighter;          /* Texte plus fin */
+  opacity: 0.85;                 /* Légèrement transparent (0 = invisible, 1 = opaque) */
+  margin-bottom: 30px;
+}
+
+/* Centrage du contenu dans le banner */
+.banner .container {
+  max-width: 700px;              /* Largeur maximale du contenu (change pour étendre/rétrécir) */
+  margin: 0 auto;                /* Centrage horizontal automatique */
+  padding: 0 20px;
+}

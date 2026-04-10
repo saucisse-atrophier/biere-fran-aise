@@ -1,0 +1,89 @@
+/* ============================================
+   COMPOSANT : CARTES DE BIÈRES
+   Modifie ici l'apparence des cartes individuelles
+   et de la grille qui les contient
+   ============================================ */
+
+/* --- GRILLE DE CARTES (.cards) --- */
+/* Conteneur qui affiche toutes les cartes côte à côte */
+.cards {
+  display: flex;                 /* Active flexbox : les cartes se mettent en ligne */
+  flex-wrap: wrap;               /* Les cartes passent à la ligne si pas assez de place */
+  gap: 20px;                     /* Espace entre chaque carte (change pour plus/moins d'espace) */
+  justify-content: center;       /* Centre les cartes horizontalement */
+  max-width: 1100px;             /* Largeur maximale de la grille */
+  margin: 0 auto;                /* Centre la grille sur la page */
+  padding: 40px 20px;           /* Espace autour de la grille */
+}
+
+/* --- CARTE INDIVIDUELLE (.card) --- */
+.card {
+  flex-basis: 300px;             /* Largeur de base de chaque carte (change pour des cartes plus larges/étroites) */
+  flex-grow: 1;                  /* La carte peut grandir pour remplir l'espace disponible */
+  max-width: 340px;              /* Largeur maximale pour éviter des cartes trop larges */
+
+  background-color: white;       /* Fond blanc de la carte */
+  border-radius: 12px;           /* Coins arrondis (mets 0 pour des coins droits) */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Ombre portée sous la carte */
+  overflow: hidden;              /* Cache ce qui dépasse des bords arrondis */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation au survol */
+}
+
+/* Effet de "soulèvement" au survol de la carte */
+.card:hover {
+  transform: translateY(-6px);           /* La carte remonte légèrement */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Ombre plus prononcée */
+}
+
+/* Image de la bière en haut de la carte */
+.card img {
+  width: 100%;                   /* L'image prend toute la largeur de la carte */
+  height: 200px;                 /* Hauteur fixe de l'image (change pour des images plus grandes) */
+  object-fit: cover;             /* L'image couvre l'espace sans se déformer */
+}
+
+/* Zone de texte en bas de la carte */
+.card .card-body {
+  padding: 20px;                 /* Espace intérieur autour du texte */
+}
+
+/* Nom de la bière */
+.card h3 {
+  font-size: 20px;
+  color: #2C1810;                /* Couleur marron foncé (change pour une autre couleur) */
+  margin-bottom: 6px;
+}
+
+/* Badge de style/type de bière */
+.card .badge {
+  display: inline-block;
+  background-color: #FFF3E0;     /* Fond beige clair */
+  color: #D4820A;                /* Texte ambre */
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 20px;           /* Badge bien arrondi */
+  margin-bottom: 10px;
+}
+
+/* Description de la bière */
+.card p {
+  font-size: 14px;
+  color: #666;                   /* Texte gris */
+  line-height: 1.6;              /* Interlignage (change pour plus/moins d'espace entre les lignes) */
+  margin-bottom: 15px;
+}
+
+/* Pied de la carte : degré d'alcool + bouton */
+.card .card-footer {
+  display: flex;                 /* Flexbox pour aligner degré et bouton côte à côte */
+  align-items: center;           /* Alignement vertical au centre */
+  justify-content: space-between; /* Degré à gauche, bouton à droite */
+}
+
+/* Degré d'alcool */
+.card .degre {
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+}

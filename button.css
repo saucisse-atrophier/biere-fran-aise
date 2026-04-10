@@ -1,0 +1,42 @@
+/* ============================================
+   COMPOSANT : BOUTONS
+   Modifie ici la couleur et la forme des boutons
+   ============================================ */
+
+/* Bouton principal (couleur ambre/bière) */
+.btn-amber {
+  display: inline-block;         /* Pour pouvoir lui donner padding et taille */
+  background-color: #D4820A;     /* Couleur ambrée (change ici pour changer la couleur du bouton) */
+  color: white;                  /* Couleur du texte du bouton */
+  padding: 12px 30px;            /* Espace intérieur : haut/bas gauche/droite */
+  border-radius: 30px;           /* Arrondi des coins (mets 0 pour des coins droits) */
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;         /* Supprime le soulignement du lien */
+  transition: background-color 0.3s; /* Animation au survol (0.3s = vitesse) */
+  letter-spacing: 1px;           /* Espacement entre les lettres */
+}
+
+/* Effet au survol du bouton */
+.btn-amber:hover {
+  background-color: #B8700A;     /* Couleur légèrement plus foncée au survol */
+}
+
+/* Bouton secondaire (contour seulement) */
+.btn-outline {
+  display: inline-block;
+  background-color: transparent; /* Fond transparent */
+  color: #D4820A;                /* Couleur du texte (même que le bouton principal) */
+  border: 2px solid #D4820A;    /* Contour coloré */
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #D4820A;    /* Fond coloré au survol */
+  color: white;
+}
